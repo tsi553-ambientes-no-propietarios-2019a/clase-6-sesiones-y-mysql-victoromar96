@@ -1,4 +1,7 @@
 <?php
+
+include('php/conection.php');
+
 /**
  * Escribir una página en PHP que permita registrar una queja en una base de datos.
  * Disponer un formulario que permita almacenar el nombre del visitante (objeto HTML de tipo "text"), la descripción de la queja (objeto de tipo 
@@ -11,3 +14,21 @@
  *
  */
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 4</title>
+</head>
+<body>
+	<h1>Quejas</h1>
+	<h2>Formulario Quejas</h2>
+	<a href="pagina3.php">Quejas</a><br><br>
+	<form action="pagina2.php" method="POST">
+		<input type="text" name="username" placeholder="Nombre de usuario"><br><br>
+		<textarea name="queja" rows="10" cols="40"></textarea>
+		<br><br>
+		<button>Enviar queja</button>
+	</form>
+</body>
+</html>
